@@ -1,0 +1,16 @@
+numpy>=1.16.5
+scipy
+scikit-learn
+gillespy2
+tsfresh==0.20.1
+ipywidgets
+dask
+distributed
+matplotlib
+umap-learn
+
+[dev]
+check-manifest
+
+[test]
+coverage

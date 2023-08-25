@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: TTSE-Project
+Version: 0.1
+Summary: Description of TTSE_Project goes here
+Home-page: https://github.com/mayank05942/TTSE_Project
+Author: Your Name Here
+Author-email: mayanknautiyal88@gmail.com
+License: MIT
+Keywords: keywords related to TTSE_Project
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: Your preferred license here
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+License-File: LICENSE
+
+# TTSSE_Project
+Course Project of TTSSE
