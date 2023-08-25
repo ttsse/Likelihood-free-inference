@@ -16,7 +16,7 @@ The Multivariate Normal Perturbation Kernel for
 Sequential Monte-Carlo Approximate Bayesian Computation (SMC-ABC)
 """
 
-from sciope.utilities.perturbationkernels.kernel_base import PerturbationKernelBase
+from TTSSE_Project.utilities.perturbationkernels.kernel_base import PerturbationKernelBase
 from scipy.stats import multivariate_normal
 import numpy as np
 

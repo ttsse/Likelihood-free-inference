@@ -16,8 +16,8 @@ The Uniform Prior
 """
 
 # Imports
-from sciope.utilities.priors.prior_base import PriorBase
-from sciope.utilities.housekeeping import sciope_logger as ml
+from TTSSE_Project.utilities.priors.prior_base import PriorBase
+from TTSSE_Project.utilities.housekeeping import sciope_logger as ml
 from dask import delayed
 import numpy as np
 

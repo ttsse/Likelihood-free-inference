@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from sciope.features.feature_extraction import generate_tsfresh_features, _get_tsfresh_features_names
-from sciope.utilities.summarystats.summary_base import SummaryBase
+from TTSSE_Project.features.feature_extraction import generate_tsfresh_features, _get_tsfresh_features_names
+from TTSSE_Project.utilities.summarystats.summary_base import SummaryBase
 from itertools import combinations
 from tsfresh.feature_extraction.settings import EfficientFCParameters, MinimalFCParameters
 import numpy as np

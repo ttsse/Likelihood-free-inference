@@ -21,20 +21,21 @@ import pickle
 
 import dask
 import numpy as np
+from dask import compute
 from dask import delayed
 from dask.distributed import futures_of, as_completed, wait
 from sciope.core import core
 from sciope.inference import abc_inference
 # Imports
-from sciope.inference.abc_inference import ABC
-from sciope.inference.inference_base import InferenceBase
-from sciope.utilities.distancefunctions import euclidean as euc
-from sciope.utilities.epsilonselectors import RelativeEpsilonSelector
-from sciope.utilities.housekeeping import sciope_logger as ml
-from sciope.utilities.perturbationkernels.multivariate_normal import MultivariateNormalKernel
-from sciope.utilities.priors.prior_base import PriorBase
-from sciope.utilities.summarystats import burstiness as bs
-from sciope.visualize.inference_results import InferenceResults, InferenceRound
+from TTSSE_Project.inference.abc_inference import ABC
+from TTSSE_Project.inference.inference_base import InferenceBase
+from TTSSE_Project.utilities.distancefunctions import euclidean as euc
+from TTSSE_Project.utilities.epsilonselectors import RelativeEpsilonSelector
+from TTSSE_Project.utilities.housekeeping import sciope_logger as ml
+from TTSSE_Project.utilities.perturbationkernels.multivariate_normal import MultivariateNormalKernel
+from TTSSE_Project.utilities.priors.prior_base import PriorBase
+from TTSSE_Project.utilities.summarystats import burstiness as bs
+from TTSSE_Project.visualize.inference_results import InferenceResults, InferenceRound
 
 
 class PerturbationPrior(PriorBase):
@@ -54,12 +55,16 @@ class PerturbationPrior(PriorBase):
         assert n >= chunk_size
 
         generated_samples = []
+        delayed_draws = []
         m = n % chunk_size
         if m > 0:
             generated_samples.append(self._weighted_draw_perturb(m))
 
         for i in range(0, n - m, chunk_size):
-            generated_samples.append(self._weighted_draw_perturb(chunk_size))
+            delayed_draws.append(self._weighted_draw_perturb(chunk_size))
+
+        # Compute delayed objects in parallel
+        generated_samples += compute(*delayed_draws)
 
         return generated_samples
 

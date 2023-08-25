@@ -78,6 +78,6 @@ def test_smcabc_inference():
 
     
 
-test_smcabc_inference()
+
 
 

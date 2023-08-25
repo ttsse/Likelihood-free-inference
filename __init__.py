@@ -14,6 +14,6 @@
 '''
 Imports for sciope module.
 '''
-from sciope.inference import *
-from sciope.utilities import *
-from sciope.visualize import *
+from TTSSE_Project.inference import *
+from TTSSE_Project.utilities import *
+from TTSSE_Project.visualize import *

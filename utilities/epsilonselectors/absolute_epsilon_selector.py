@@ -15,7 +15,7 @@
 Absolute epsilon selector
 """
 
-from sciope.utilities.epsilonselectors.epsilon_selector import *
+from TTSSE_Project.utilities.epsilonselectors.epsilon_selector import *
 
 
 class AbsoluteEpsilonSelector(EpsilonSelector):

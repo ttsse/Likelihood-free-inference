@@ -16,11 +16,11 @@ Approximate Bayesian Computation
 """
 
 # Imports
-from sciope.inference.inference_base import InferenceBase
-from sciope.utilities.distancefunctions import euclidean as euc
-from sciope.utilities.summarystats import burstiness as bs
-from sciope.core import core
-from sciope.utilities.housekeeping import sciope_logger as ml
+from TTSSE_Project.inference.inference_base import InferenceBase
+from TTSSE_Project.utilities.distancefunctions import euclidean as euc
+from TTSSE_Project.utilities.summarystats import burstiness as bs
+from TTSSE_Project.core import core
+from TTSSE_Project.utilities.housekeeping import sciope_logger as ml
 from toolz import partition_all
 import numpy as np
 from dask.distributed import futures_of, as_completed, get_client

@@ -16,8 +16,8 @@ The Euclidean distance function
 """
 
 # Imports
-from sciope.utilities.distancefunctions.distance_base import DistanceBase
-from sciope.utilities.housekeeping import sciope_logger as ml
+from TTSSE_Project.utilities.distancefunctions.distance_base import DistanceBase
+from TTSSE_Project.utilities.housekeeping import sciope_logger as ml
 from dask import delayed
 import numpy as np
 

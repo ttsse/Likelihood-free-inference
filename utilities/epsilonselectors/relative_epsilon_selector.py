@@ -14,7 +14,7 @@
 """
 An epsilon selector based on relative percentiles.
 """
-from sciope.utilities.epsilonselectors.epsilon_selector import *
+from TTSSE_Project.utilities.epsilonselectors.epsilon_selector import *
 import numpy as np
 
 

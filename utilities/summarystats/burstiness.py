@@ -18,8 +18,8 @@ The 'Burstiness' summary statistic
 # Imports
 import numpy as np
 import math as mt
-from sciope.utilities.summarystats.summary_base import SummaryBase
-from sciope.utilities.housekeeping import sciope_logger as ml
+from TTSSE_Project.utilities.summarystats.summary_base import SummaryBase
+from TTSSE_Project.utilities.housekeeping import sciope_logger as ml
 
 
 # Class definition: Burstiness Statistic
