@@ -1,8 +1,14 @@
-# Techniques and Technologies forScientific Software Engineering Project
+# Techniques and Technologies for Scientific Software Engineering Project
 
 ## Overview
 
 This report is prepared for a course project in "Techniques and Technologies for Scientific Software Engineering." The focus of this project is to incorporate the best Software Development Life Cycle (SDLC) practices learned in the course into practice. An improved version of the Sciope inference library has been showcased, featuring additional test cases and an enhanced version of the Sequential Monte Carlo Approximate Bayesian Computation (ABC) method. Additionally, the project leverages parallel processing, demonstrating a comprehensive application of the concepts and techniques learned throughout the course.
+
+The repository contains a `demo_experiment` folder with the experiment file in the form of a Jupyter Notebook for hands-on demonstration of the project.
+
+**Note**: This repository is a modified version of [Sciope](https://link-to-sciope-repository), tailored to suit the specific requirements of this project.
+
+
 
 
 # Installation Instructions for TTSSE Project
