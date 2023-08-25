@@ -6,7 +6,7 @@ This report is prepared for a course project in "Techniques and Technologies for
 
 The repository contains a `demo_experiment` folder with the experiment file in the form of a Jupyter Notebook for hands-on demonstration of the project.
 
-**Note**: This repository is a modified version of [Sciope](https://link-to-sciope-repository), tailored to suit the specific requirements of this project.
+**Note**: This repository is a modified version of [Sciope](https://github.com/StochSS/sciope), tailored to suit the specific requirements of this project.
 
 
 
