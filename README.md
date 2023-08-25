@@ -18,10 +18,10 @@ This report is prepared for a course project in "Techniques and Technologies for
     ```bash
    pip install -e TTSSE_Project/
    
-4. Add the path:
-   \`\`\`bash
+4. **Add the path:**
+    ```bash
    export PYTHONPATH="${PYTHONPATH}:/path/to/your/project"
-   \`\`\`
+
 
 ## License
 
