@@ -14,20 +14,10 @@ This report is prepared for a course project in "Techniques and Technologies for
    ```bash
    git clone https://github.com/mayank05942/TTSSE_Project.git
 
-
-
-
-## Installation
-
-1. Open terminal
-2. Clone the repository:
-   \`\`\`bash
-   git clone https://github.com/mayank05942/TTSSE_Project.git
-   \`\`\`
-3. Install the package:
-   \`\`\`bash
+3. **Install the package:**
+    ```bash
    pip install -e TTSSE_Project/
-   \`\`\`
+   
 4. Add the path:
    \`\`\`bash
    export PYTHONPATH="${PYTHONPATH}:/path/to/your/project"
