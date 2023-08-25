@@ -4,6 +4,19 @@
 
 This report is prepared for a course project in "Techniques and Technologies for Scientific Software Engineering." The focus of this project is to incorporate the best Software Development Life Cycle (SDLC) practices learned in the course into practice. An improved version of the Sciope inference library has been showcased, featuring additional test cases and an enhanced version of the Sequential Monte Carlo Approximate Bayesian Computation (ABC) method. Additionally, the project leverages parallel processing, demonstrating a comprehensive application of the concepts and techniques learned throughout the course.
 
+# Installation Instructions for TTSSE Project
+
+## Steps to install and set up the project:
+
+1. **Open terminal**
+
+2. **Clone the repository:**
+   ```bash
+   git clone https://github.com/mayank05942/TTSSE_Project.git
+
+
+
+
 ## Installation
 
 1. Open terminal
