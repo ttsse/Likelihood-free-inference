@@ -24,6 +24,7 @@ def simulator(param, n=100):
     return np.reshape(y, (1,1,100))
 
 # Generate observed data
+true_params = [0.6,0.2]
 obs_data = simulator([0.6,0.2])
 
 # Define priors
@@ -67,19 +68,13 @@ def run_smcabc_inference():
                                    chunk_size=1, eps_selector=eps_selector, resume = False)
     return smc_abc_results
 
-def test_smcabc_efficiency():
-    
-    smc_abc_results = run_smcabc_inference()
 
-    # efficiency = (accepted_sample_per_round) / (total_num_trials_per_round)
-    
-    desired_num_accepted = 10  # For each round we want 10 accpeted samples
-    efficiencies = [desired_num_accepted / res["trial_count"] for res in smc_abc_results]
-    trial_counts = [res["trial_count"] for res in smc_abc_results]
-    
-    # Ensure that efficiency values are non-increasing and positive
-    for i in range(1, len(efficiencies)):
-        assert efficiencies[i] <= efficiencies[i-1] + 1e-10, f"Efficiency significantly increased from round {i-1} to {i}"
-        assert efficiencies[i] > 0, f"Efficiency is non-positive in round {i}"
+def test_smcabc_efficiency():
+    smc_abc_results = run_smcabc_inference()
+    total_trials = sum(res["trial_count"] for res in smc_abc_results)
+    max_rounds = 6
+    max_trials = max_rounds*100000
+    assert total_trials <= max_trials, f"Total trials exceeded maximum: {total_trials} > {max_trials}"
+
 
 

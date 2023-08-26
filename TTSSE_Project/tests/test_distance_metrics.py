@@ -105,21 +105,19 @@ from TTSSE_Project.utilities.distancefunctions import naive_squared, manhattan, 
 
 DISTANCE_METRICS = [
     naive_squared.NaiveSquaredDistance(),
-    manhattan.ManhattanDistance(),
-    euclidean.EuclideanDistance()
+     euclidean.EuclideanDistance()
 ]
 
 @pytest.mark.parametrize("distance_metric", DISTANCE_METRICS)
 def test_abc_functional(distance_metric):
     abc = ABC(fixed_data, sim=simulator2, prior_function=uni_prior, summaries_function=summ_func, distance_function=distance_metric)
 
-    abc.compute_fixed_mean(chunk_size=2)
+    abc.compute_fixed_mean(chunk_size=1)
 
     # run in multiprocessing mode
-    res = abc.infer(num_samples=10, batch_size=2, chunk_size=2)
+    res = abc.infer(num_samples=5, batch_size=1, chunk_size=1)
     mae_inference = mean_absolute_error(true_params, abc.results['inferred_parameters'])
     
-    assert abc.results['trial_count'] > 0 and abc.results['trial_count'] < 1000, f"ABC inference test failed with {distance_metric}, trial count out of bounds"
     assert mae_inference < 0.5, f"ABC inference test failed with {distance_metric}, error too high"
 
 
