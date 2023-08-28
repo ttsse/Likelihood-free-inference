@@ -28,7 +28,7 @@ setup(
     url='https://github.com/mayank05942/TTSE_Project',
 
     # Author details
-    author='Your Name Here',
+    author='Mayank Nautiyal',
     author_email='mayanknautiyal88@gmail.com',
 
     license='MIT',
