@@ -1,8 +1,9 @@
 """A setuptools based setup module for TTSE_Project.
 See:
 https://github.com/mayank05942/TTSE_Project
-"""
 
+"""
+# Taken from sciope
 # Always prefer setuptools over distutils
 from setuptools import setup, find_packages
 # To use a consistent encoding
@@ -28,7 +29,7 @@ setup(
     url='https://github.com/mayank05942/TTSE_Project',
 
     # Author details
-    author='Your Name Here',
+    author='Mayank Nautiyal',
     author_email='mayanknautiyal88@gmail.com',
 
     license='MIT',
