@@ -4,9 +4,8 @@ https://github.com/mayank05942/TTSE_Project
 
 """
 # Taken from sciope
-# Always prefer setuptools over distutils
+
 from setuptools import setup, find_packages
-# To use a consistent encoding
 from codecs import open
 from os import path
 
@@ -21,7 +20,7 @@ setup(
 
     version='0.1',
 
-    description='Description of TTSE_Project goes here',
+    description='TTSE_Project',
     long_description_content_type='text/markdown',
     long_description=long_description,
 
