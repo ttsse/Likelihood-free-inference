@@ -22,7 +22,8 @@ The repository contains a `demo_experiment` folder with the experiment file in t
 
 2. **Clone the repository:**
    ```bash
-   git clone https://github.com/mayank05942/TTSSE_Project.git
+   git clone https://github.com/ttsse/Likelihood-free-inference.git
+
     ```
 
 3. **Install the package:**
