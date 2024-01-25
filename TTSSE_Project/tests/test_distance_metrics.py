@@ -9,6 +9,7 @@ from gillespy2.solvers.numpy import NumPySSASolver
 from dask.distributed import Client
 import gillespy2
 import pytest
+import numpy as np
 from gillespy2 import SSACSolver
 
 class ToggleSwitch(gillespy2.Model):
