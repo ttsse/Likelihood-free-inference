@@ -1,0 +1,22 @@
+# macOS system files
+.DS_Store
+
+# Log files
+*.log
+
+# Node modules
+node_modules/
+
+# Compiled source #
+*.exe
+
+
+# Packages #
+
+*.7z
+*.dmg
+*.jar
+*.rar
+*.tar
+*.zip
+
