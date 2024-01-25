@@ -26,7 +26,6 @@ from dask import delayed
 from dask.distributed import futures_of, as_completed, wait
 from sciope.core import core
 from sciope.inference import abc_inference
-# Imports
 from TTSSE_Project.inference.abc_inference import ABC
 from TTSSE_Project.inference.inference_base import InferenceBase
 from TTSSE_Project.utilities.distancefunctions import euclidean as euc
@@ -234,7 +233,8 @@ class SMCABC(InferenceBase):
     def _run_iteration(self, tol, population, normalized_weights, perturbation_kernel,
                        new_prior, chunk_size, t, batch_size, relative, abc_history, round):
 
-        """ Helper Function to run a single iteration of SMC-ABC """
+        """ Helper Function to run a single iteration of SMC-ABC
+            return abc_results and history """
 
         abc_results = self._abc_instance(tol, t, new_prior, chunk_size,
                                          batch_size, relative, abc_history)
@@ -264,7 +264,7 @@ class SMCABC(InferenceBase):
                            saved_runs_path, eps_selector, resume,
                            ensemble_size=1):
 
-        """ Run ABC-SMC from start i.e Round 0"""
+        """ Run ABC-SMC from the beginning i.e round 0"""
 
         abc_history = []
         t = num_samples
