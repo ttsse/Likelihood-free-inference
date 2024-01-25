@@ -21,7 +21,7 @@ def simulator(param, n=100):
             x[t] += g[t - 1 - p] * param[p]
         y[t] = x[t] + gy[t]
     
-    return np.reshape(y, (1,1,100))
+    return np.reshape(y, (1,1,100))  # reshape to be in NxSxT format
 
 # Generate observed data
 true_params = [0.6,0.2]
@@ -34,9 +34,7 @@ upper_bounds = [1, 1]
 prior = UniformPrior(np.array(lower_bounds), np.array(upper_bounds))
 
 
-values = np.array([
-    1.0, 1.0
-])
+values = np.array([1.0, 1.0])
 
 parameters = {}
 for i, name in enumerate(parameter_names):
