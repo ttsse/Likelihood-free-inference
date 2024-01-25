@@ -1,10 +1,14 @@
-# Techniques and Technologies for Scientific Software Engineering Project
+# Likelihood Free Inference
 
 ## Overview
 
 This report is prepared for a course project in "Techniques and Technologies for Scientific Software Engineering." The focus of this project is to incorporate the best Software Development Life Cycle (SDLC) practices learned in the course into practice. An improved version of the Sciope inference library has been showcased, featuring additional test cases and an enhanced version of the Sequential Monte Carlo Approximate Bayesian Computation (ABC) method. Additionally, the project leverages parallel processing, demonstrating a comprehensive application of the concepts and techniques learned throughout the course.
 
-The repository contains a `demo_experiment` folder with the experiment file in the form of a Jupyter Notebook for hands-on demonstration of the project.
+
+To ensure the reliability and stability of the project, a new set of test cases has been added. These tests are designed to rigorously evaluate the functionality of the project and help maintain high-quality standards.
+
+
+The repository contains a `demo_experiment` folder with the experiment file in the form of a Jupyter Notebook for a hands-on demonstration of the project.
 
 **Note**: This repository is a modified version of [Sciope](https://github.com/StochSS/sciope), tailored to suit the specific requirements of this project.
 
