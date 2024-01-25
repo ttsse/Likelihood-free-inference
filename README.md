@@ -7,7 +7,6 @@ This report is prepared for a course project in "Techniques and Technologies for
 
 To ensure the reliability and stability of the project, a new set of test cases has been added. These tests are designed to rigorously evaluate the functionality of the project and help maintain high-quality standards.
 
-
 The repository contains a `demo_experiment` folder with the experiment file in the form of a Jupyter Notebook for a hands-on demonstration of the project.
 
 **Note**: This repository is a modified version of [Sciope](https://github.com/StochSS/sciope), tailored to suit the specific requirements of this project.
