@@ -1,1 +1,1 @@
-__all__ = ["ann_regressor", "gp_regressor", "model_base", "svm_regressor"]
+__all__ = ["dnn_base", "model_base", "cnn_regressor"]
